@@ -121,12 +121,11 @@ img {
   max-width: 1440px;
 }
 .container {
-  width: 1158px;
+  max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
 .about {
-  max-width: 1440px;
   background-color: #2e2f42;
   background-image: linear-gradient(to bottom, #2e2f42b3, #2e2f42b3),
     url("../images/people-office.jpg");
@@ -135,9 +134,6 @@ img {
   background-size: cover;
   padding: 188px 0;
   margin: 0 auto;
-}
-.section.about {
-  position: relative;
 }
 .about-title {
   text-align: center;
@@ -197,7 +193,7 @@ img {
   gap: 24px;
 }
 .feature-item {
-  flex-basis: calc((100%-72px) / 4);
+  max-width: 264px;
 }
 .feature-picture {
   display: flex;
@@ -665,15 +661,61 @@ img {
     max-width: 768px;
   }
   .container {
-    width: 768px;
+    max-width: 768px;
     padding: 0 16px;
   }
   .about {
-    max-width: 768px;
     padding: 112px 0;
-    margin: 0 auto;
+  }
+  .about-title {
+    margin-bottom: 36px;
+  }
+  .feature-picture {
+    display: none;
+  }
+  .features-cards {
+    flex-wrap: wrap;
+    row-gap: 72px;
+  }
+  .feature-item {
+    max-width: 356px;
+  }
+  .feature-item > h3 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+  }
+  .feature-item > p {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-bottom: 0;
+  }
+  .team-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 64px;
+  }
+  .portfolio-item-photo {
+    max-width: 356px;
+  }
+  .portfolio-text > p {
+    margin-bottom: 0;
+  }
+  .footer {
+    padding: 96px 0;
+    max-width: 768px;
+  }
+  .footer-logo,
+  .footer-social {
+    margin-right: 0;
+  }
+  .footer .container {
+    padding: 0 108px;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 768px) {
 }
