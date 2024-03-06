@@ -238,7 +238,7 @@ body {
   row-gap: 72px;
 }
 .feature-item {
-  max-width: 288px;
+  flex-basis: calc((100% - 24px) / 2);
 }
 .feature-item-picture {
   display: none;
@@ -816,7 +816,7 @@ body {
     gap: 24px;
   }
   .feature-item {
-    max-width: 264px;
+    flex-basis: calc((100% - 72px) / 4);
   }
   .feature-item-picture {
     display: flex;
