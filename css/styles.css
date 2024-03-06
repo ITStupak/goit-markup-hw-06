@@ -654,7 +654,7 @@ body {
 
 /*=====Tablet version=====*/
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   /*-----Header-----*/
   .container {
     max-width: 768px;
@@ -782,7 +782,7 @@ body {
 
 /*=====Desktop version=====*/
 
-@media (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
   /*-----Header-----*/
   .container {
     max-width: 1158px;
@@ -859,7 +859,7 @@ body {
 
 /*=====2x screens, retina=====*/
 
-@media (min-width: 768px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .about {
     background-image: linear-gradient(
         to bottom,
@@ -870,7 +870,7 @@ body {
   }
 }
 
-@media (max-width: 767px) and (min-resolution: 192dpi) {
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .about {
     background-image: linear-gradient(
         to bottom,
