@@ -1,11 +1,5 @@
-/*==========Mobile version==========*/
+/*=====Reset default styles=====*/
 
-body {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.5;
-  color: #434455;
-  background-color: #ffffff;
-}
 h1,
 h2,
 h3,
@@ -27,7 +21,15 @@ img {
   height: auto;
 }
 
-/*----------Header----------*/
+/*=====Mobile version=====*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  color: #434455;
+  background-color: #ffffff;
+}
+/*-----Header-----*/
 
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -90,11 +92,11 @@ img {
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .menu-window.is-open {
+.menu-window.is-open {
   transform: translateX(0);
   opacity: 1;
   visibility: visible;
-} */
+}
 .menu.mobile {
   display: flex;
   flex-direction: column;
@@ -156,7 +158,7 @@ img {
   background-color: #404bbf;
 }
 
-/*----------Section About----------*/
+/*-----Section About-----*/
 
 .section {
   padding: 96px 0;
@@ -207,7 +209,7 @@ img {
   background-color: #404bbf;
 }
 
-/*----------Section Features----------*/
+/*-----Section Features-----*/
 
 .visually-hidden {
   position: absolute;
@@ -258,7 +260,7 @@ img {
   letter-spacing: 0.02em;
 }
 
-/*----------Section Team----------*/
+/*-----Section Team-----*/
 
 .team {
   background-color: #f4f4fd;
@@ -276,6 +278,10 @@ img {
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 #2e2f4214, 0 1px 1px 0 #2e2f4229,
     0 1px 6px 0 #2e2f4214;
+}
+.team-item-photo {
+  object-fit: cover;
+  object-position: center;
 }
 .team-item-about {
   padding: 32px 0px;
@@ -335,7 +341,7 @@ img {
   background-color: #31d0aa;
 }
 
-/*----------Section Portfolio----------*/
+/*-----Section Portfolio-----*/
 
 .portfolio-cards {
   display: flex;
@@ -383,7 +389,7 @@ img {
   transform: translatey(0%);
 }
 
-/*----------Footer----------*/
+/*-----Footer-----*/
 
 .footer {
   background-color: #2e2f42;
@@ -466,7 +472,7 @@ img {
   margin-left: 16px;
 }
 
-/*----------Backdrop & Modal window----------*/
+/*-----Backdrop & Modal window-----*/
 
 .modal-backdrop {
   width: 100%;
@@ -482,11 +488,11 @@ img {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .modal-backdrop.is-open {
+.modal-backdrop.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-} */
+}
 .modal-window {
   width: 100%;
   max-width: 288px;
@@ -646,10 +652,10 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*==========Tablet version==========*/
+/*=====Tablet version=====*/
 
 @media (min-width: 768px) {
-  /*----------Header----------*/
+  /*-----Header-----*/
   .container {
     max-width: 768px;
   }
@@ -705,7 +711,7 @@ img {
   .menu-window {
     display: none;
   }
-  /*----------Section About----------*/
+  /*-----Section About-----*/
   .about {
     background-image: linear-gradient(
         to bottom,
@@ -723,7 +729,7 @@ img {
     max-width: 496px;
     margin: 0 auto 36px;
   }
-  /*----------Section Features----------*/
+  /*-----Section Features-----*/
   .features-cards {
     flex-direction: row;
     flex-wrap: wrap;
@@ -732,17 +738,17 @@ img {
   .feature-item {
     max-width: 356px;
   }
-  /*----------Section Team----------*/
+  /*-----Section Team-----*/
   .team-cards {
     row-gap: 64px;
     column-gap: 24px;
   }
-  /*----------Section Portfolio----------*/
+  /*-----Section Portfolio-----*/
   .portfolio-cards {
     row-gap: 72px;
     justify-content: space-between;
   }
-  /*----------Footer----------*/
+  /*-----Footer-----*/
   .footer .container {
     justify-content: flex-start;
     align-items: start;
@@ -767,17 +773,17 @@ img {
   .subscribe-form-input {
     min-width: 264px;
   }
-  /*----------Backdrop & Modal window----------*/
+  /*-----Backdrop & Modal window-----*/
   .modal-window {
     max-width: 408px;
     padding: 72px 24px 24px;
   }
 }
 
-/*==========Desktop version==========*/
+/*=====Desktop version=====*/
 
 @media (min-width: 1158px) {
-  /*----------Header----------*/
+  /*-----Header-----*/
   .container {
     max-width: 1158px;
     padding: 0 15px;
@@ -794,7 +800,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
-  /*----------Section About----------*/
+  /*-----Section About-----*/
   .section {
     padding: 120px 0;
   }
@@ -805,7 +811,7 @@ img {
   .about-title {
     margin: 0 auto 48px;
   }
-  /*----------Section Features----------*/
+  /*-----Section Features-----*/
   .features-cards {
     gap: 24px;
   }
@@ -831,11 +837,11 @@ img {
   .feature-item-dscr {
     font-weight: 400;
   }
-  /*----------Section Portfolio----------*/
+  /*-----Section Portfolio-----*/
   .portfolio-cards {
     row-gap: 48px;
   }
-  /*----------Footer----------*/
+  /*-----Footer-----*/
   .footer {
     padding: 100px 0;
   }
@@ -848,5 +854,29 @@ img {
   }
   .footer-social {
     margin-right: 80px;
+  }
+}
+
+/*=====2x screens, retina=====*/
+
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+  .about {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/about/people-office@2x.jpg");
+  }
+}
+
+@media (max-width: 767px) and (min-resolution: 192dpi) {
+  .about {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/about/people-office-mobile@2x.jpg");
   }
 }
