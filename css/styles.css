@@ -238,7 +238,7 @@ body {
   row-gap: 72px;
 }
 .feature-item {
-  flex-basis: calc((100% - 24px) / 2);
+  flex-basis: auto;
 }
 .feature-item-picture {
   display: none;
@@ -734,9 +734,13 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    column-gap: 24px;
   }
   .feature-item {
-    max-width: 356px;
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .feature-item-title {
+    text-align: left;
   }
   /*-----Section Team-----*/
   .team-cards {
@@ -812,9 +816,6 @@ body {
     margin: 0 auto 48px;
   }
   /*-----Section Features-----*/
-  .features-cards {
-    gap: 24px;
-  }
   .feature-item {
     flex-basis: calc((100% - 72px) / 4);
   }
@@ -832,7 +833,6 @@ body {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    text-align: left;
   }
   .feature-item-dscr {
     font-weight: 400;
